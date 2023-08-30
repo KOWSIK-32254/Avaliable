@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- Designined by CodingLab | www.youtube.com/codinglabyt -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Sticky Navigation Bar | CodingLab </title>
+
+    <link rel="stylesheet" href="D:/JFSD/SDPWORKSPACE/css/empstyle.css">
+    <style>
+  .centered {
+  position: absolute;
+
+  top: 33%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body{
+  height: 104vh;
+}
+
+    </style>
+
+   </head>
+<body>
+  <nav>
+    <div class="nav-content">
+      <div class="logo">
+        <a href="employeehome.html" class="" target="_top" style="color: brown;"> 𝒍𝒆𝒕'𝒔 𝒍𝒆𝒂𝒓𝒏 !
+   <img src="D:/JFSD/SDPWORKSPACE/images/book.png" width="30px" height="30" />
+</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="employeehome.html">Home</a></li>
+        <li><a href="#">Book Returns</a></li>
+        <li><a href="#">Book Barrows</a></li>
+         <li><a href="addabook.html">Add Book</a></li>
+        <li><a href="deletebook.html">Remove Book</a></li>
+       <li><a href="changepwdemployee.html">ChangePassword</a></li>
+
+        <li><a href="login.html">Logout</a></li>
+
+      </ul>
+    </div>
+  </nav>
+  <section class="home"></section>
+  <div class="centered">
+       <br><br>
+    <br><br>
+    <h1 style="font-size:3vw;"> <font color="black">𝑯𝒆𝒍𝒍𝒐 𝑳𝒊𝒃𝒓𝒂𝒓𝒊𝒂𝒏 !<br>
+                       𝑳𝒆𝒕'𝒔 𝑴𝒂𝒌𝒆 𝒂 𝑫𝒂𝒚 𝑪𝒐𝒖𝒏𝒕 !...</font></h1>
+   </div>
+  
+
+  <script>
+  let nav = document.querySelector("nav");
+    window.onscroll = function() {
+      if(document.documentElement.scrollTop > 20){
+        nav.classList.add("sticky");
+      }else {
+        nav.classList.remove("sticky");
+      }
+    }
+  </script>
+
+</body>
+</html>

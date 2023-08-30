@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- Designined by CodingLab | www.youtube.com/codinglabyt -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Sticky Navigation Bar | CodingLab </title>
+
+    <link rel="stylesheet" href="D:/JFSD/SDPWORKSPACE/css/indexstyle.css">
+        <link rel="stylesheet" href="D:/JFSD/SDPWORKSPACE/css/book.css">
+        
+
+   </head>
+<body>
+  <nav>
+    <div class="nav-content">
+      <div class="logo">
+        <a href="index.html" class="" target="_top"style="color: brown;"> 𝒍𝒆𝒕'𝒔 𝒍𝒆𝒂𝒓𝒏 !
+   <img src="D:/JFSD/SDPWORKSPACE/images/book.png" width="30px" height="30" />
+</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#">India Today </a></li>
+        <li><a href="#">New Arrivals </a></li>
+
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </div>
+  </nav>
+  <br><br><br><br><br><br>
+  <!-- partial:index.partial.html -->
+<div class="imgLoader"></div>
+
+<div class="container">
+
+  <h1 class="title">
+    𝑻𝒐𝒅𝒂𝒚 𝒂 𝒓𝒆𝒂𝒅𝒆𝒓, 𝒕𝒐𝒎𝒐𝒓𝒓𝒐𝒘 𝒂 𝒍𝒆𝒂𝒅𝒆𝒓 !<br>
+  </h1>
+  <section></section>
+
+  <div class="credit">
+  </div>
+
+  <div class="book">
+    <div class="gap"></div>
+    <div class="pages">
+      <div class="page"></div>
+      <div class="page"></div>
+      <div class="page"></div>
+      <div class="page"></div>
+      <div class="page"></div>
+      <div class="page"></div>
+    </div>
+    <div class="flips">
+      <div class="flip flip1">
+        <div class="flip flip2">
+          <div class="flip flip3">
+            <div class="flip flip4">
+              <div class="flip flip5">
+                <div class="flip flip6">
+                  <div class="flip flip7"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<a href="login.html" class="twitterLink" target="_top">
+   <img src="D:/JFSD/SDPWORKSPACE/images/goright.png" />
+</a>
+<!-- partial -->
+  
+
+  <script>
+  let nav = document.querySelector("nav");
+    window.onscroll = function() {
+      if(document.documentElement.scrollTop > 20){
+        nav.classList.add("sticky");
+      }else {
+        nav.classList.remove("sticky");
+      }
+    }
+  </script>
+
+</body>
+</html>

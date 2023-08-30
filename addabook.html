@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <style>
+     body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #eee;
+    }
+
+
+
+    .additional-links {
+      text-align: center;
+      margin-top: 20px;
+      color: #000000px;
+    }
+
+    .centered {
+      position: absolute;
+      top: 62%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .login-container {
+      width: 350px;
+      margin: 100px auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.3);
+      border-radius: 10px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+    .login-form label {
+  margin-bottom: 5px; /* You can adjust this value as needed */
+}
+.login-form .form-group {
+  margin-bottom: 15px; /* You can adjust this value as needed */
+}
+
+
+    .login-form input[type="password"]  input[type="text"],
+    input[type="date"], input[type="text"],
+    input[type="number"]{
+      width: 100%;
+      margin-bottom: -15px;
+      padding:10px;
+      border: none;
+      border-radius: 5px;
+      background-color: rgba(255, 255, 255, 0.8);
+      outline: none;
+    }
+
+    .login-form button[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #4CAF50;
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .login-form button[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+  <meta charset="UTF-8">
+  <title>Change Password | CodingLab</title>
+  <link rel="stylesheet" href="D:/JFSD/SDPWORKSPACE/css/empstyle.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-content">
+      <div class="logo">
+        <a href="employeehome.html" class="" target="_top"style="color: brown;"> 𝒍𝒆𝒕'𝒔 𝒍𝒆𝒂𝒓𝒏 !
+   <img src="D:/JFSD/SDPWORKSPACE/images/book.png" width="30px" height="30" />
+</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="employeehome.html">Home</a></li>
+        <li><a href="#">Book Returns</a></li>
+        <li><a href="#">Book Barrows</a></li>
+        <li><a href="addabook.html">Add Book</a></li>
+        <li><a href="deletebook.html">Remove Book</a></li>
+       <li><a href="changepwdemployee.html">ChangePassword</a></li>
+
+        <li><a href="login.html">Logout</a></li>
+      </ul>
+    </div>
+  </nav>
+  <section class="home"></section>
+ 
+  <div class="centered">
+    <div class="login-container">
+      <h1>Add Book</h1>
+      <br>
+      <form class="login-form">
+        <div class="input-row">
+          <div class="form-group">
+            <label for="bookId">Book ID:</label>
+            <input type="number" id="bookId" name="bookId" required>
+          </div>
+          <div class="form-group">
+            <label for="bookName">Book Name:</label>
+            <input type="text" id="bookName" name="bookName" required>
+          </div>
+        </div>
+        <div class="input-row">
+          <div class="form-group">
+            <label for="year">Year:</label>
+            <input type="date" id="year" name="year" required>
+          </div>
+          <div class="form-group">
+            <label for="author">Author:</label>
+            <input type="text" id="author" name="author" required>
+          </div>
+        </div>
+        <div class="input-row">
+          <div class="form-group">
+            <label for="publisher">Publisher:</label>
+            <input type="text" id="publisher" name="publisher" required>
+          </div>
+        </div>
+        <button type="submit">Add Book</button>
+      </form>
+    </div>
+  </div>
+  <script>
+    let nav = document.querySelector("nav");
+    window.onscroll = function() {
+      if(document.documentElement.scrollTop > 20){
+        nav.classList.add("sticky");
+      } else {
+        nav.classList.remove("sticky");
+      }
+    }
+  </script>
+</body>
+</html>

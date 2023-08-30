@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!-- Designined by CodingLab | www.youtube.com/codinglabyt -->
+<html lang="en" dir="ltr">
+  <head>
+    <style>
+         .additional-links {
+      text-align: center; /* Center-align the content */
+      margin-top: 20px; /* Add some top margin */
+      margin-left: 0px;
+      color: #000000px;
+    }
+
+  
+.centered {
+  position: absolute;
+
+  top: 33%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+   .login-container {
+      
+      width: 300px;
+      margin: 100px auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.3);
+      border-radius: 10px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Login form */
+    .login-form input[type="email"],
+    .login-form input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 5px;
+      background-color: rgba(255, 255, 255, 0.8);
+      outline: none;
+    }
+    
+    .login-form button[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #4CAF50;
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    
+    .login-form button[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    </style>
+    <meta charset="UTF-8">
+    <title> Sticky Navigation Bar | CodingLab </title>
+    <link rel="stylesheet" href="D:/JFSD/SDPWORKSPACE/css/style.css">
+   </head>
+<body>
+  <nav>
+    <div class="nav-content">
+      <div class="logo">
+        <a href="index.html" class="" target="_top"style="color: brown;"> 𝒍𝒆𝒕'𝒔 𝒍𝒆𝒂𝒓𝒏 !
+   <img src="D:/JFSD/SDPWORKSPACE/images/book.png" width="30px" height="30" />
+</a>
+      </div>
+      <ul class="nav-links">
+         <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#">India Today </a></li>
+        <li><a href="#">New Arrivals </a></li>
+
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </div>
+  </nav>
+  <section class="home"></section>
+   
+
+
+  
+   <div class="centered">
+       <br><br>
+    <br><br>  <br><br>
+    <br><br>  <br><br>
+    <br><br>
+     <div class="login-container">
+    <h1 >Login</h1>
+    <br>
+    <form class="login-form">
+      <input type="email" placeholder="Email ID" required>
+      <input type="password" placeholder="Password" required><br>
+      <a href="employeehome.html">Forgot password?</a><br><br>
+      <button type="submit">Log in</button>
+    </form>
+
+     <div class="additional-links">
+        <a href="#">Don't have an account Faculty?</a><br><br>
+                <a href="studentregistration.html">Don't have an account Student?</a><br><br>
+
+
+      </div>
+   </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <script>
+  let nav = document.querySelector("nav");
+    window.onscroll = function() {
+      if(document.documentElement.scrollTop > 20){
+        nav.classList.add("sticky");
+      }else {
+        nav.classList.remove("sticky");
+      }
+    }
+  </script>
+
+</body>
+</html>
